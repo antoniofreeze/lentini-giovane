@@ -454,6 +454,102 @@ body.is-nav-open { overflow: hidden; }
   .coalition-badge { flex-direction: column; text-align: center; }
 }
 
+/* ---------- Cookie Banner ---------- */
+.cookie-banner {
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  z-index: 9999;
+  background: var(--navy);
+  border-top: 2px solid var(--orange);
+  color: var(--white);
+  padding: 1.1rem clamp(1rem, 5vw, 3rem);
+  box-shadow: 0 -6px 32px rgba(7,27,53,.32);
+}
+.cookie-banner-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  max-width: var(--container);
+  margin-inline: auto;
+  flex-wrap: wrap;
+}
+.cookie-banner p {
+  flex: 1;
+  min-width: 220px;
+  margin: 0;
+  font-size: .87rem;
+  line-height: 1.5;
+  color: rgba(255,255,255,.85);
+}
+.cookie-banner p a { color: var(--orange); text-decoration: underline; }
+.cookie-banner-actions { display: flex; gap: .65rem; flex-shrink: 0; }
+
+.btn-secondary {
+  background: transparent;
+  color: rgba(255,255,255,.75);
+  border-color: rgba(255,255,255,.3);
+}
+.btn-secondary:hover {
+  background: rgba(255,255,255,.08);
+  color: var(--white);
+  border-color: rgba(255,255,255,.6);
+}
+
+/* ---------- Legal text (privacy.html) ---------- */
+.page-hero {
+  background: var(--navy);
+  padding: clamp(6rem, 10vw, 9rem) clamp(1.5rem, 6vw, 5rem) clamp(3rem, 5vw, 5rem);
+  text-align: center;
+}
+.page-hero .eyebrow { color: var(--orange); }
+.page-hero h1 { color: var(--white); margin-bottom: 1rem; font-size: clamp(2rem, 5vw, 3.5rem); }
+.page-hero p { color: rgba(255,255,255,.75); max-width: 640px; margin-inline: auto; }
+
+.legal-text {
+  max-width: 760px;
+  margin-inline: auto;
+  padding: clamp(3rem, 6vw, 5rem) clamp(1.5rem, 6vw, 5rem);
+}
+.legal-text h2 {
+  font-size: 1.35rem;
+  color: var(--navy);
+  margin-top: 2.5rem;
+  margin-bottom: .6rem;
+  padding-bottom: .4rem;
+  border-bottom: 2px solid var(--orange);
+}
+.legal-text h3 {
+  font-size: 1rem;
+  color: var(--navy);
+  margin-top: 1.5rem;
+  margin-bottom: .4rem;
+}
+.legal-text p, .legal-text li {
+  font-size: .95rem;
+  color: var(--text-muted);
+  line-height: 1.75;
+  margin-bottom: .75rem;
+}
+.legal-text ul, .legal-text ol {
+  padding-left: 1.4rem;
+  margin-bottom: 1rem;
+}
+.legal-text a { color: var(--orange); text-decoration: underline; }
+.legal-text strong { color: var(--text); }
+.legal-meta {
+  margin-top: 2.5rem;
+  font-size: .82rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+/* ---------- Responsive additions ---------- */
+@media (max-width: 580px) {
+  .cookie-banner-actions { width: 100%; }
+  .cookie-banner-actions .btn { flex: 1; text-align: center; justify-content: center; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .reveal { opacity: 1; transform: none; transition: none; }
   .hero-logo img { animation: none; }
