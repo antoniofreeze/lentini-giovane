@@ -23,7 +23,7 @@ const CANDIDATES = [
   { order:  9, name: "SAMMATRICE LUDOVICA RITA",  cv: "assets/docs/cv-giovane-09.pdf" },
   { order: 10, name: "FISICARO ANDREA",           cv: "assets/docs/cv-giovane-10.pdf", casellario: "assets/docs/casellario-lentini-giovane-combinato.pdf" },
   { order: 11, name: "GNISCI CHIARINA",           cv: "assets/docs/cv-giovane-11.pdf", casellario: "assets/docs/casellario-lentini-giovane-combinato.pdf" },
-  { order: 12, name: "FUCCIO ALFINA",             casellario: "assets/docs/casellario-giovane-12.pdf" },
+  { order: 12, name: "FUCCIO ALFINA",             cv: "assets/docs/cv-giovane-12.pdf", casellario: "assets/docs/casellario-giovane-12.pdf" },
   { order: 13, name: "FANCIULLO ALFIO",           casellario: "assets/docs/casellario-giovane-13.pdf" },
   { order: 14, name: "DE LEO INES",               cv: "assets/docs/cv-giovane-14.pdf", casellario: "assets/docs/casellario-lentini-giovane-combinato.pdf" },
   { order: 15, name: "COMMENDATORE VALENTINA",    cv: "assets/docs/cv-giovane-15.pdf", casellario: "assets/docs/casellario-lentini-giovane-combinato.pdf" },
